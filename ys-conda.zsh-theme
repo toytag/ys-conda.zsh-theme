@@ -53,8 +53,10 @@ conda_prompt_info() {
 # For example:
 #
 # % ys @ ys-mbp in ~/.oh-my-zsh on git:master x [21:47:42] C:0
-# $
-PROMPT="%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
+# (base) $
+
+PROMPT="
+%{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
 %(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]%}%n) \
 %{$fg[white]%}@ \
 %{$fg[green]%}%m \
